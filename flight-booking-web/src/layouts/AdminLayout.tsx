@@ -1,6 +1,5 @@
 import { NavLink, Outlet, Link } from "react-router-dom";
 import {
-  Armchair,
   Building2,
   LayoutDashboard,
   MapPin,

@@ -280,7 +280,7 @@ export default function AdminDashboardPage() {
                     tickFormatter={(val) => `${val / 1000000}M`}
                   />
                   <Tooltip 
-                    formatter={(value: number) => formatNumber(value)}
+                    formatter={(value) => formatNumber(Number(value ?? 0))}
                     labelFormatter={(val) => `Ngày: ${val}`}
                   />
                   <Area type="monotone" dataKey="revenue" name="Doanh thu (VND)" stroke="#10b981" fillOpacity={1} fill="url(#colorRevenue)" />

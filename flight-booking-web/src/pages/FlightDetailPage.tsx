@@ -49,7 +49,7 @@ function getErrorMessage(error: unknown) {
 export default function FlightDetailPage() {
   const { flightId } = useParams();
   const navigate = useNavigate();
-  const { user, isAuthenticated } = useAuth();
+  const { isAuthenticated } = useAuth();
 
   const flightIdNumber = Number(flightId);
 

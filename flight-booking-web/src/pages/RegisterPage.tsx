@@ -7,7 +7,8 @@ import {
   Plane,
   UserRound,
 } from "lucide-react";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+import type { FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { register } from "../api/auth.api";
 import { useAuth } from "../context/AuthContext";

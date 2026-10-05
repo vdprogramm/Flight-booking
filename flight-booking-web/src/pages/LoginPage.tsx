@@ -1,5 +1,6 @@
 import { ArrowLeft, Eye, EyeOff, LockKeyhole, Mail, Plane } from "lucide-react";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+import type { FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login } from "../api/auth.api";
 import { useAuth } from "../context/AuthContext";
