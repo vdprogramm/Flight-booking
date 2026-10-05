@@ -1,0 +1,307 @@
+.flights-admin {
+  color: #172b4d;
+}
+
+.flights-admin-heading,
+.flights-admin-toolbar,
+.flights-admin-pagination,
+.flights-admin-modal-header,
+.flights-admin-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.flights-admin-heading > div > span {
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.flights-admin-heading h1 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.flights-admin-heading p,
+.flights-admin-toolbar p,
+.flights-admin-modal-header p {
+  color: #71819b;
+  font-size: 13px;
+  margin: 0;
+}
+
+.flights-admin-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.flights-admin-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.flights-admin-panel {
+  margin-top: 28px;
+  background: white;
+  border: 1px solid #e3eaf5;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.flights-admin-toolbar {
+  padding: 24px;
+}
+
+.flights-admin-toolbar h2 {
+  margin: 0 0 7px;
+  font-size: 18px;
+}
+
+.flights-admin-filters {
+  display: flex;
+  gap: 10px;
+}
+
+.flights-admin-filters select,
+.flights-admin-form select,
+.flights-admin-form input {
+  padding: 11px 12px;
+  border: 1px solid #dce4f0;
+  border-radius: 9px;
+  background: white;
+  color: #172b4d;
+  font: inherit;
+}
+
+.flights-admin-table-wrap {
+  overflow-x: auto;
+}
+
+.flights-admin-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.flights-admin-table th {
+  padding: 16px 20px;
+  background: #f8faff;
+  color: #71819b;
+  font-size: 12px;
+}
+
+.flights-admin-table td {
+  padding: 18px 20px;
+  border-top: 1px solid #edf1f7;
+  font-size: 13px;
+}
+
+.flights-admin-table td small {
+  display: block;
+  color: #8190a7;
+  margin-top: 6px;
+}
+
+.flights-admin-route {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2563eb;
+}
+
+.flights-admin-status {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.flights-admin-status.scheduled {
+  background: #eaf1ff;
+  color: #2563eb;
+}
+
+.flights-admin-status.delayed {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.flights-admin-status.cancelled {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.flights-admin-status.completed {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.flights-admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flights-admin-actions button,
+.flights-admin-actions a,
+.flights-admin-modal-header button {
+  display: grid;
+  place-items: center;
+  min-width: 35px;
+  height: 35px;
+  padding: 0 8px;
+  border: 1px solid #e5eaf3;
+  border-radius: 9px;
+  background: white;
+  color: #2563eb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flights-admin-actions .danger {
+  color: #dc2626;
+}
+
+.flights-admin-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.flights-admin-empty {
+  text-align: center;
+  padding: 50px !important;
+  color: #71819b;
+}
+
+.flights-admin-pagination {
+  padding: 18px 24px;
+  border-top: 1px solid #edf1f7;
+  font-size: 13px;
+}
+
+.flights-admin-pagination > div {
+  display: flex;
+  gap: 8px;
+}
+
+.flights-admin-pagination button,
+.flights-admin-secondary {
+  padding: 10px 15px;
+  border: 1px solid #dce4f0;
+  border-radius: 9px;
+  background: white;
+  cursor: pointer;
+}
+
+.flights-admin-pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.flights-admin-success,
+.flights-admin-error {
+  margin-top: 18px;
+  padding: 13px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.flights-admin-success {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.flights-admin-error {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.flights-admin-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.flights-admin-modal {
+  width: min(100%, 760px);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 17px;
+}
+
+.flights-admin-modal-header {
+  padding: 24px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.flights-admin-modal-header h2 {
+  margin: 0 0 7px;
+  font-size: 21px;
+}
+
+.flights-admin-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 24px;
+}
+
+.flights-admin-form label {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.flights-admin-form label small {
+  color: #dc2626;
+  font-weight: 400;
+}
+
+.flights-admin-form input,
+.flights-admin-form select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.flights-admin-modal-footer {
+  justify-content: flex-end;
+  padding: 20px 24px;
+  border-top: 1px solid #edf1f7;
+}
+
+@media (max-width: 750px) {
+  .flights-admin-heading,
+  .flights-admin-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .flights-admin-filters {
+    flex-direction: column;
+  }
+
+  .flights-admin-form {
+    grid-template-columns: 1fr;
+  }
+}
